@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slideshow</title>
+    <style>
+        /* Your existing styles */
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #121212, #333333);
+            transition: background 1s ease-in-out;
+        }
+        @media (max-width:800px){
+            #details {
+                display: none;
+            }
+            
+        }
+
+        #slideshow-wrapper {
+            margin: 40px;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        #slideshow-container {
+            max-width: 150%;
+            position: relative;
+        }
+
+        .slides-wrapper {
+            display: flex;
+            transition: transform 1s ease-in-out;
+            margin-left: 0; /* Align the images to the left */
+        }
+
+        .mySlides {
+            flex: 0 0 100%;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+#details {
+    text-align: center;
+    padding: 30px;
+    background: #000; /* Solid black background */
+    color: #e9e4e4;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+}
+
+
+        #details h2 {
+            position: absolute;
+            top: -0px; /* Adjusted top value */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #details h2 img {
+            max-width: 60px;
+            height: 50px;
+            margin-right: 20px; /* Adjust the margin between images */
+            margin-bottom: 10px; /* Add margin at the bottom of each image */
+        }
+        #details1 {
+    text-align: center;
+    padding: 30px;
+    background: #000; /* Solid black background */
+    color: #e9e4e4;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+}
+
+
+        #details1 h2 {
+            position: absolute;
+            top: -0px; /* Adjusted top value */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #details1 h2 img {
+            max-width: 60px;
+            height: 50px;
+            margin-right: 20px; /* Adjust the margin between images */
+            margin-bottom: 10px; /* Add margin at the bottom of each image */
+        }
+        .position1{
+            margin-right: 20px;
+            margin-left: 30px ;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="slideshow-wrapper">
+        <div id="slideshow-container">
+            <div class="slides-wrapper">
+                <div class="mySlides">
+                    <img src="images\91eb0fa06a837784a7a2c52145e30907.jpeg" alt="Image 1">
+                </div>
+
+                <div class="mySlides">
+                    <img src="images\neon_miles_morales_spider_man_4k_hd_spider_man_into_the_spider_verse-3840x2160.jpg" alt="Image 2">
+                </div>
+
+                <div class="mySlides">
+                    <img src="images\1326421.jpeg" alt="Image 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="details">
+       <h2 style="margin-left: 200px;"><img src="images\pngwing.com.png" alt="image not found . 404 ."> </h2> 
+       <h2 style="margin-left: -200px ;"><img src=" images\pngwing.com (1).png" alt="404"></h2> 
+       <h2 style="margin-left: -400px;"><img src="images\toppng.com-steam-logo-png-steam-logo-black-500x500.png" alt="404"></h2>
+       <h2 style="margin-left: 400px;"><img src="images\5v3nspjbvvpv97at6rjra1fgdp-d420e59416d2a2781f48a3d4692c7e4f.png" alt="404"></h2>
+       <h2 ><img src="images\kisspng-razer-inc-gamer-mouse-mats-video-games-razer-logo-white-info-5b6f65d31635d4.854820291534027219091.png" alt="404"></h2>
+       
+        <br>
+        <br>
+        <br>
+    </div>
+<br>
+    <div id="details1" style="background: linear-gradient(rgba(209, 209, 209, 0.7), rgba(255, 255, 255, 0.2)); border-radius: 15px; height: 200px; padding: 30px; color: #171717;">
+        <h2> <img src="images\games-21595.png" alt="image not found . 404 ."> </h2>
+         <br>
+         <br>
+         <br>
+         <div style="text-align: center">
+            <b>Purchase Your Favorite Game</b>
+            <br>
+            <b>&
+            <br>
+            Dive into the world of Gaming<br> </b>
+            Explore a vast collection of the latest and most exciting games at GameShop. Whether you're a hardcore gamer or just getting started, we have something for everyone.
+            Immerse yourself in breathtaking graphics, captivating storylines, and thrilling gameplay. Our curated selection includes genres ranging from action and adventure to strategy and simulation.
+            Join our gaming community and stay updated on the latest releases, exclusive offers, and gaming events. Let the adventure begin!
+         </div>
+    </div>
+    
+    <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            let slidesWrapper = document.querySelector('.slides-wrapper');
+            let slides = document.querySelectorAll('.mySlides');
+            let body = document.body;
+            let details = document.getElementById('details');
+
+            slideIndex++;
+
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+
+            slidesWrapper.style.transform = `translateX(-${slideIndex * 100}%)`;
+
+            // Apply gradients based on the current image index
+            if (slideIndex === 0) {
+                body.style.animation = 'gradient1 4s ease-in-out';
+                details.style.background = 'linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.2))';
+            } else if (slideIndex === 1) {
+                body.style.animation = 'gradient1 4s ease-in-out';
+                details.style.background = 'linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.2))';
+            } else if (slideIndex === 2) {
+                body.style.animation = 'gradient1 4s ease-in-out';
+                details.style.background = 'linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.2))';
+            }
+
+            setTimeout(showSlides, 4000);
+        }
+
+        // Start the slideshow when the page loads
+        window.onload = showSlides;
+    </script>
+</body>
+</html>

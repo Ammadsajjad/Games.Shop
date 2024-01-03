@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Game Store</title>
+        <style>
+            /* Reset some default styles */
+            body,
+            h1,
+            h2,
+            h3,
+            p,
+            ul,
+            li {
+                margin: 0;
+                padding: 0;
+            }
+    
+            .featured-games,
+            .game-categories {
+              
+                margin-bottom: 30px;
+                overflow: hidden; /* Ensure the container doesn't expand when images are next to each other */
+            }
+    
+            .image-container {
+                display: flex;
+                transition: transform 1s ease-in-out;
+            }
+    
+            .image-container img {
+                width: 100%;
+                border-radius: 15px;
+                cursor: pointer;
+            }
+    
+            .wide-slide-box {
+                width: 40%;
+                background-color: #333;
+                padding: 10px;
+                border-radius: 10px;
+                margin: 5px;
+                text-align: center;
+            }
+    
+            /* Basic styling for the body */
+            body {
+                font-family: 'Arial', sans-serif;
+                line-height: 2.0;
+                background-color: #121212;
+                color: #fff;
+            }
+    
+            @media (max-width: 700px) {
+                /* Display main1 and hide main when screen width is between 700px and 1800px */
+                main {
+                    display: none;
+                }
+    
+                main {
+                    
+                    max-width: 100%;
+                    margin: 20px auto;
+                    padding: 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+            }
+    
+            @media (max-width: 700px) {
+                /* Display main and hide main1 when screen width is less than 700px */
+                main1 {
+                    display: none;
+                }
+                
+    
+                main {
+                    
+                    max-width: 100%;
+                    margin: 20px auto;
+                    padding: 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+            }
+    
+            /* Main content styles */
+            main,
+            main1 {
+                
+                max-width: 1200px;
+                margin: 20px auto;
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+            }
+    
+            /* Game box styles */
+            .game-box,
+            .wide-box,
+            .game-box-2 {
+                width: 100%;
+                background-color: #333;
+                padding: 10px;
+                border-radius: 10px;
+                margin: 5px;
+                text-align: center;
+            }
+    
+            .game-box img,
+            .wide-box img,
+            .game-box-2 img {
+                width: 100%;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+
+<body>
+<br>
+    <P style="color: 1f1f1f;">     
+    <section class="featured-games">
+       <pre> <h2 style="color: #979797;" >                                  Holiday Spotlight >
+    </pre>
+</h2></P> 
+    </section>
+    <main>
+
+        <!-- Game Box 1 -->
+        <div class="game-box">
+            <a href="https://store.epicgames.com/en-US/p/red-dead-redemption-2" target="_blank">
+            <img src="images\Red_Dead_Redemption_1024x1024@2x.jpg" alt="Game 1"></a>
+            <p>Red Dead Redemption</p>
+        </div>
+
+        <!-- Game Box 2 -->
+        <div class="game-box">
+            <a href="https://store.epicgames.com/en-US/p/alan-wake-2" target="_blank" >
+            <img src="images\alan-wake-2-phone-wallpaper-4k-uhdpaper.com-267@1@m.jpg" alt="Game 2"></a> 
+            <p>Alan Wake II</p>
+        </div>
+
+        <!-- Game Box 3 -->
+        <div class="game-box">
+            <a href="https://store.epicgames.com/en-US/p/control" target="_blank">
+            <img src="images\df4ff2831b970ff788fc9fc515746ff5.png" alt="Game 3"></a>
+            <p>Control</p>
+        </div>
+
+        <!-- Game Box 4 -->
+        <div class="game-box">
+            <a href="https://store.epicgames.com/en-US/p/hogwarts-legacy" target="_blank">
+            <img src="images\Hogwarts-Legacy-Art.jpg" alt="Game 4"></a>
+            <p>Hogwards Legacy</p>
+        </div>
+
+        <!-- Game Box 5 -->
+        <div class="game-box">
+            <a href="https://store.epicgames.com/en-US/p/cyberpunk-2077" target="_blank">
+            <img src="images\njhm.PNG" alt="Game 5"></a>
+            <p>Cyberpunkk 2077</p>
+        </div>
+        </main1>
+    </main>
+
+    <br>
+        <P style="color: 1f1f1f;">     
+        <section class="featured-games">
+           <pre> <h2 style="color: #979797;">                                  Top Sellers >
+        </pre>
+            </h2></P>
+        </section>
+        <main>
+            <!-- Game Box 1 -->
+            <div class="wide-box">
+                <a href="https://store.epicgames.com/en-US/p/marvels-spider-man-miles-morales" target="_blank">
+                <img src="images\9f62de1a74e4cf253a517650c98fc62e.jpg" alt="Game 1"></a>
+                <p>Spider-man Miles Morales</p>
+            </div>
+    
+            <!-- Game Box 2 -->
+            <div class="wide-box">
+                <a href="https://store.epicgames.com/en-US/p/far-cry-6" target="_blank"> 
+                <img src="images\Untitled design.png" alt="Game 2"></a>
+                <p>Far Cry 6</p>
+            </div>
+    
+            <!-- Game Box 3 -->
+            <div class="wide-box">
+                <a href="https://store.epicgames.com/en-US/p/ghostrunner-2" target="_blank">
+                <img src="images\EGS_Ghostrunner2DeluxeEdition_OneMoreLevel_Editions_S2_1200x1600-eebd483fee21d8919d2d807f1a35aec6.jpeg" alt="Game 3"></a>
+                <p>Ghostrunner 2</p>
+                </main1>
+           </main>
+                <P style="color: 1f1f1f;">     
+                    <section class="featured-games">
+                       <pre> <h2 style="color: #979797;">                                  Trending >
+                    </pre>
+                        </h2></P>
+                    </section>
+                        <main>
+                            <!-- Game Box 1 -->
+                            <div class="game-box-2">
+                                <a href="https://store.epicgames.com/en-US/p/valorant" target="_blank">
+                                <img src="images\MV5BNmNhM2NjMTgtNmIyZC00ZmVjLTk4YWItZmZjNGY2NThiNDhkXkEyXkFqcGdeQXVyODU4MDU1NjU@._V1_.jpg" alt="Game 1"></a>
+                                <p>Valorant</p>
+                            </div>
+                    
+                            <!-- Game Box 2 -->
+                            <div class="game-box-2">
+                                <a href="https://store.epicgames.com/en-US/p/fortnite" target="_blank">
+                                <img src="images\qqq.PNG" alt="Game 2"></a>
+                                <p>Fortnite</p>
+                            </div>
+                    
+                            <!-- Game Box 3 -->
+                            <div class="game-box-2">
+                                <a href="https://store.epicgames.com/en-US/p/assassins-creed-mirage" target="_blank">
+                                <img src="images\4033732-acmiragestandard.png" alt="Game 3"></a>
+                                <p>Assassins Creed Mirage</p>
+                            </div>
+                    
+                            <!-- Game Box 4 -->
+                            <div class="game-box-2">
+                                <a href="https://store.epicgames.com/en-US/p/the-witcher-3-wild-hunt" target="_blank">
+                                <img src="images\d4170fe6ea0b174a38926a5f0a0f7fce03344a11.png" alt="Game 4"></a>
+                                <p>Witcher III Wild Hunt</p>
+                            </div>
+                    
+                            <!-- Game Box 5 -->
+                            <div class="game-box-2">
+                                <a href="https://store.epicgames.com/en-US/p/horizon-zero-dawn-complete-edition" target="_blank">
+                                <img src="images\STL190444.jpg" alt="Game 5"></a>
+                                <p>Horizon Zero Dawn</p>
+                            </div>
+                        
+                        </main>
+                        <main>
+                                <section class="featured-games">
+                                           <h2>Featured Games</h2>
+                                
+                                           <div class="image-container">
+                                               <!-- Add links to each image -->
+                                               <img src="images\8jmhwzrrymg81.png" alt="Alan Wake II">
+                                               <img src="images\dante-and-vergil-devil-may-cry-5-thumb.jpg" alt="Last of us part I">
+                                               <img src="images\gaming-cosplay-1920-x-1080-wallpaper-tltgt3vmuokhvf72.jpg" alt="Ghost-wire Tokyo">
+                                               <img src="images\Marvels-Spider-Man-2-Spider-Man-vs-Venom-4K-Wallpaper-jpg.webp" alt="RDR 2">
+                                               <img src="images\thumb-1920-952328.jpg" alt="Far cry 6"><br>
+                                           </div>
+                                       </section>
+                                   
+                                   <script>
+                                    let slideIndex = 0;
+                                    const imageContainer = document.querySelector('.image-container');
+                                    const images = document.querySelectorAll('.featured-games img');
+                            
+                                    function showSlides() {
+                                        slideIndex++;
+                            
+                                        if (slideIndex >= images.length) {
+                                            slideIndex = 0;
+                                        }
+                            
+                                        const translateValue = -100 * slideIndex + '%';
+                                        imageContainer.style.transform = 'translateX(' + translateValue + ')';
+                            
+                                        setTimeout(showSlides, 3000); // Set the timeout to 5 seconds (5000 milliseconds)
+                                    }
+                            
+                                    // Start the slideshow when the page loads
+                                    window.onload = showSlides;
+                                </script>
+                                
+                        </main>
+
+
+
+                        <P style="color: 1f1f1f;">     
+                            <section class="featured-games">
+                               <pre> <h2 style="color: #979797;">                                  Most Played >
+                            </pre>
+                                </h2></P>
+                            </section>
+
+    <main>
+        <!-- Game Box 1 -->
+        <div class="game-box">
+            <a href="https://store.epicgames.com/en-US/p/fallout-new-vegas" target="_blank">
+            <img src="images\Keyart_falloutnewvegas.jpg" alt="Fallout 4"></a>
+            <p>Fallout New Vegas</p>
+        </div>
+
+        <!-- Game Box 2 -->
+        <div class="game-box">
+            <a href="https://store.epicgames.com/en-US/p/far-cry-5" target="_blank" >
+            <img src="images\3237319-fc5_keyart_1495563526.jpg" alt="Far cry 5"></a> 
+            <p>Far cry 5</p>
+        </div>
+
+        <!-- Game Box 3 -->
+        <div class="game-box">
+            <a href="https://store.epicgames.com/en-US/p/rainbow-six-siege" target="_blank">
+            <img src="images\61BlQmnK8XS._AC_UF894,1000_QL80_.jpg" alt="6 Siege"></a>
+            <p>Rainbow Six Siege</p>
+        </div>
+
+        <!-- Game Box 4 -->
+        <div class="game-box">
+            <a href="https://store.epicgames.com/en-US/p/ghost-recon-breakpoint" target="_blank">
+            <img src="images\breakpoint-cover-art-digital-standard-edition-september-29-2021 (1).jpg" alt="Breakpoint"></a>
+            <p>Tom Clancy's Ghost Recon Breakpoint</p>
+        </div>
+
+        <!-- Game Box 5 -->
+        <div class="game-box">
+            <a href="https://store.epicgames.com/en-US/p/metro-exodus" target="_blank">
+            <img src="images\co1iuj.jpg" alt="Metro"></a>
+            <p>Metro Exedu</p>
+        </div>
+   
+    </main>
+
+    <main>
+        <!-- Game Box 1 -->
+        <div class="game-box">
+            <a href="https://store.epicgames.com/en-US/p/ghost-recon-wildlands" target="_blank">
+            <img src="images\43499_Tom_Clancys_Ghost_Recon_Wildlands.jpg" alt="wildlands"></a>
+            <p>Tom Clancy's Ghost Recon Wildlands</p>
+        </div>
+
+        <!-- Game Box 2 -->
+        <div class="game-box">
+            <a href="https://store.epicgames.com/en-US/p/assassins-creed-syndicate" target="_blank" >
+            <img src="images\91oAiNxGpYL._AC_UF894,1000_QL80_.jpg" alt="Assassins Creed Syndicate"></a> 
+            <p>Assassins Creed Syndicate</p>
+        </div>
+
+        <!-- Game Box 3 -->
+        <div class="game-box">
+            <a href="https://store.epicgames.com/en-US/p/hitman-3" target="_blank">
+            <img src="images\dh3utecr7vd61.png" alt="Hitman I"></a>
+            <p>Hitman I</p>
+        </div>
+
+        <!-- Game Box 4 -->
+        <div class="game-box">
+            <a href="https://store.epicgames.com/en-US/p/hitman-3--access-pass-hitman-2-expansion-01" target="_blank">
+            <img src="images\4d516fbc2b9e8863f443f3a58b9da44f.jpg" alt="Hitman II"></a>
+            <p>Hitman II</p>
+        </div>
+
+        <!-- Game Box 5 -->
+        <div class="game-box">
+            <a href="https://store.epicgames.com/en-US/p/hitman-3--hitman-3-deluxe-pack" target="_blank">
+            <img src="images\apps.44541.14005179770819827.bed9fd26-ac3f-4f19-b4b2-e129d83820ae.jpeg" alt="Hitman III "></a>
+            <p>Hitman III</p>
+        </div>
+    
+    </main>          
+    <main>
+            <!-- Game Box 1 -->
+            <div class="game-box">
+                <a href="https://store.epicgames.com/en-US/p/crysis-3-remastered" target="_blank">
+                <img src="images\IMG-20231229-WA0005.jpg" alt="crysis 3"></a>
+                <p>Crysis 3</p>
+            </div>
+    
+            <!-- Game Box 2 -->
+            <div class="game-box">
+                <a href="https://store.epicgames.com/en-US/p/watch-dogs-legion--deluxe-edition" target="_blank" >
+                <img src="images\IMG-20231229-WA0006.jpg" alt="Watch dogs Legion"></a> 
+                <p>Watch Dogs Legion</p>
+            </div>
+    
+            <!-- Game Box 3 -->
+            <div class="game-box">
+                <a href="https://store.epicgames.com/en-US/p/watch-dogs-2--deluxe-edition" target="_blank">
+                <img src="images\IMG-20231229-WA0007.jpg" alt="Watch dogs 2"></a>
+                <p>Watch Dogs II</p>
+            </div>
+    
+            <!-- Game Box 4 -->
+            <div class="game-box">
+                <a href="https://store.epicgames.com/en-US/p/watch-dogs--complete-edition" target="_blank">
+                <img src="images\IMG-20231229-WA0008.jpg" alt="Watch Dogs"></a>
+                <p>Watch Dogs</p>
+            </div>
+    
+            <!-- Game Box 5 -->
+            <div class="game-box">
+                <a href="https://store.epicgames.com/en-US/p/grand-theft-auto-v" target="_blank">
+                <img src="images\IMG-20231229-WA0011.jpg" alt="Gta v"></a>
+                <p>Gta V</p>
+            </div>
+        
+        </main>
+
+    
+        <main>
+            <!-- Game Box 1 -->
+            <div class="game-box">
+                <a href="https://store.epicgames.com/en-US/p/mortal-kombat-1" target="_blank">
+                <img src="images\IMG-20231229-WA0012.jpg" alt="Mortal Kombat 1"></a>
+                <p>Mortal Kombat 1</p>
+            </div>
+    
+            <!-- Game Box 2 -->
+            <div class="game-box">
+                <a href="https://store.epicgames.com/en-US/p/batman-arkham-knight" target="_blank" >
+                <img src="images\1005806-batman-arkham-knight-playstation-4-front-cover.jpg" alt="gears of war 4"></a> 
+                <p>Batman Arkham Knight</p>
+            </div>
+    
+            <!-- Game Box 3 -->
+            <div class="game-box">
+                <a href="https://store.epicgames.com/en-US/p/dying-light" target="_blank">
+                <img src="images\Dying_Light_cover.jpg" alt="Dying Light"></a>
+                <p>Dying Light</p>
+            </div>
+    
+            <!-- Game Box 4 -->
+            <div class="game-box">
+                <a href="https://store.epicgames.com/en-US/p/payday-2-c66369" target="_blank">
+                <img src="images\IMG-20231229-WA0010.jpg" alt="Payday 2"></a>
+                <p>Payday 2</p>
+            </div>
+    
+            <!-- Game Box 5 -->
+            <div class="game-box">
+                <a href="https://store.epicgames.com/en-US/p/rise-of-the-tomb-raider" target="_blank">
+                <img src="images\EGS_RiseoftheTombRaider20YearCelebration_CrystalDynamics_S2_1200x1600-a73f93bb560142e08d56db4c2bfdb03c.jpeg" alt="Rise of The Tomb Raider"></a>
+                <p>Rise of The Tomb Raider</p>
+            </div>
+      
+        </main>
+    
+
+    
+</body> 
+</html>

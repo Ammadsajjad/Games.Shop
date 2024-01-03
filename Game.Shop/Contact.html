@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-GLhlTQ8i7uZL8iK+IJqVV8aFUsdpaF5W/8aA/hM12LsBMFbG5L8q5t73KckwL4pQ" crossorigin="anonymous">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #121212;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 150vh;
+            overflow: hidden;
+        }
+        .upper-section,
+       .lower-section {
+            padding: 10px;
+            border-radius: 15px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+        
+
+     
+        @media (max-width: 1400px) {
+    .upper-section {
+        display: none; /* Hide the upper section */
+    }
+
+    .lower-section {
+        flex: 1; /* Take up the full width */
+    }
+}
+
+@media (max-width: 1000px) {
+    .additional-container img {
+        display: none; /* Hide the image within the additional container */
+    }
+
+    .additional-container {
+        display: block;
+    }
+}
+
+@media (max-width: 720px) {
+    .additional-container {
+        text-align: center;
+        display: none; /* Hide the entire additional container */
+    }
+} 
+ 
+
+.upper-section {
+            
+            padding: 10px;
+            flex: 0.6;
+            background-color: #333;
+        }
+
+        .lower-section {
+            flex: 0.4;
+            background-color: #333;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 20px; /* Added left padding for the icons */
+            color: #fff; /* Set text color to white */
+        }
+
+        .upper-section img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            flex-direction: column; /* Display icons in a column */
+            gap: 10px;
+        }
+
+        .social-icons img {
+            width: 30px; /* Set the width of the icons */
+            border-radius: 5px; /* Adjust the value for rounded corners on the icons */
+        }
+
+        .additional-container {
+            flex: .3.5; /* Adjust the size of the additional containers */
+            background-color: #444; /* Set background color as desired */
+            border-radius: 15px; /* Adjust the value for rounded corners */
+            padding: 5px;
+            margin-left: 10px; /* Add some spacing between the containers */
+            color: #fff; /* Set text color to white */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center the content in the container */
+        }
+
+        .additional-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px; /* Add some spacing between the image and other content */
+        }
+    </style>
+    <title>Two Sections Webpage</title>
+</head>
+<body>
+    <div class="container">
+        <div class="upper-section">
+            <!-- Content for the upper section goes here -->
+            <img src="images/1341150.png" alt="Description of the image" style="border-radius: 10px;">
+        </div>
+        <br>
+        <br>
+        <div class="lower-sections">
+
+        </div>
+        <div class="lower-section">   
+            <!-- Content for the lower section goes here -->
+            <div class="social-icons">
+                <h2 style="color: #b1afaf;">Contact Us</h2>
+                <br>
+                <img src="images/kisspng-instagram-computer-icons-logo-clip-art-well-5b50e0c919d6d5.9779015115320270811059.png" alt="Instagram">
+                <br>
+                <img src="images/kisspng-computer-icons-logo-twitter-5ace902c1c8720.8415741215234867641169.png" alt="Twitter">
+                <br>
+                <img src="images/kisspng-social-media-computer-icons-facebook-inc-icon-de-5af569a00bb849.252610251526032800048.png" alt="Facebook">
+                <br>
+                <img src="images/5a359002ce50d5.3263382315134597148451.png" alt="Gmail">
+            </div>
+            <div class="additional-container">
+                <!-- Content for the first additional container goes here -->
+                <h3>Headquarters</h3>
+                <hr>Service Road E-9 / E-8, Islamabad, Pakistan, E-9, Islamabad, Islamabad Capital Territory 44000, Pakistan
+                <p>Gameshop@gmail.com.</p>
+                <p>+(62)21 2002-2020</p>
+            </div>
+            <div class="additional-container img-container">
+                <!-- Content for the second additional container goes here -->
+                <p><img src="images/maps.PNG" alt=""></p>
+                <p>Air University</p>
+            </div>
+            <div>
+                <!-- Empty div for spacing -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

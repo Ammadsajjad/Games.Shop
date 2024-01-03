@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Game Store</title>
+    <style>
+        /* Reset some default styles */
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li
+        {
+            margin: 0;
+            padding: 0;
+        }
+        @media (min-width: 531px) and (max-width: 3000px) {
+    #additional-text {
+        display: block;
+    }
+
+    #additional-text2 {
+        display: none;
+        text-align: center;
+    }
+}
+
+/* Media query for widths up to 530px */
+@media (max-width: 530px) {
+    #additional-text2 {
+        display: block;
+        text-align: center;
+    }
+
+    #additional-text {
+        display: none;
+    }
+}
+        /* Basic styling for the body */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 2.0;
+            background-color: #121212;
+            color: #fff;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* Main content styles */
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .featured-games,
+        .game-categories {
+            margin-bottom: 30px;
+            overflow: hidden; /* Ensure the container doesn't expand when images are next to each other */
+        }
+
+        .image-container {
+            display: flex;
+            transition: transform 1s ease-in-out;
+        }
+
+        .image-container img {
+            width: 100%;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Additional styles for the new section */
+        #additional-text {
+            background-color: #444;
+            color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            
+        }
+        #additional-text2 {
+            background-color: #444;
+            color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 600px) {
+            nav {
+                text-align: center;
+            }
+
+            nav ul {
+                display: block;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Your Game Store</div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Games.html">Games</a></li>
+                <li><a href="javascript:void(0);" onclick="scrollToSection('about-us')">About Us</a></li>
+
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="featured-games">
+            <h2>Featured Games</h2>
+            <div class="image-container">
+                <!-- Add links to each image -->
+                <img src="images\20235259405415_1.jpg" alt="Alan Wake II">
+                <img src="images\the_last_of_us_part_ii_joel_ellie_4k-3840x2160.jpg" alt="Last of us part I">
+                <img src="images\Ghostwire-Tokyo.jpeg" alt="Ghost-wire Tokyo">
+                <img src="images\677562.webp" alt="RDR 2">
+                <img src="images\3249406.jpg" alt="Far cry 6">
+            </div>
+        </section>
+
+        <section id="about-us" class="game-categories">
+            <h2>About us</h2>
+            <!-- Add game categories content here -->
+        </section>
+        
+        <!-- New section for additional text -->
+        <div id="additional-text"><p>
+     <pre>   Support-A-Creator           Fan Art  Policy    Online Services
+   Distribute on Games.Shop    UX Research       Community Rules
+   Careers                     Store EULA        Epic Newsroom
+   Company  
+               </pre>   
+            </p>
+                <p>Welcome to Our Game Store, where gaming dreams come to life! Our journey began with a passion for gaming and a vision to create a space where gamers could find everything they need. Since our inception in 2023, we've been dedicated to providing the ultimate gaming experience for enthusiasts of all levels.</p>
+        
+            <p><strong>What Sets Us Apart:</strong> We take pride in offering a curated selection of the latest and greatest games, ensuring that every title on our shelves is a masterpiece. Our team of gaming experts is passionate about helping you discover new worlds, epic adventures, and unforgettable experiences.</p>
+        
+            <p><strong>Community First:</strong> Your Game Store is more than a place to buy games; it's a hub for like-minded individuals to share their passion. Join us in our events, tournaments, and online discussions. Together, we'll build a community where every gamer feels at home.</p>
+            <p><strong>Customer Satisfaction:</strong> Your satisfaction is our priority. From the moment you enter our store to the time you conquer your latest gaming challenge, we're here to support you. Our customer service team is dedicated to ensuring your experience with Your Game Store is nothing short of exceptional.</p>
+            <p>
+            <p>
+                © 2023, Games.Shop, Inc. All rights reserved.the Games.Shop logo, Fortnite, the Fortnite logo, Unreal, Unreal Engine, the Unreal Engine logo, Unreal Tournament, and the Unreal Tournament logo are trademarks or registered trademarks of Epic Games, Inc. in the United States of America and elsewhere. Other brands or product names are the trademarks of their respective owners & Contact Via contact page    
+            </p>
+            <p>Terms of ServicePrivacy PolicyStore Refund Policy</p>
+        </div>
+
+        <div id = "additional-text2">
+                   <p>Welcome to Our Game Store, where gaming dreams come to life! Our journey began with a passion for gaming and a vision to create a space where gamers could find everything they need. Since our inception in 2023, we've been dedicated to providing the ultimate gaming experience for enthusiasts of all levels.</p>
+               
+                   <p><strong>What Sets Us Apart:</strong> We take pride in offering a curated selection of the latest and greatest games, ensuring that every title on our shelves is a masterpiece. Our team of gaming experts is passionate about helping you discover new worlds, epic adventures, and unforgettable experiences.</p>
+               
+                   <p><strong>Community First:</strong> Your Game Store is more than a place to buy games; it's a hub for like-minded individuals to share their passion. Join us in our events, tournaments, and online discussions. Together, we'll build a community where every gamer feels at home.</p>
+               
+                  
+                       © 2023, Games.Shop, Inc. All rights reserved.the Games.Shop logo, Fortnite, the Fortnite logo, Unreal, Unreal Engine, the Unreal Engine logo, Unreal Tournament, and the Unreal Tournament logo are trademarks or registered trademarks of Epic Games, Inc. in the United States of America and elsewhere. Other brands or product names are the trademarks of their respective owners & Contact Via contact page    
+                   </p>
+                   <p>Terms of ServicePrivacy PolicyStore Refund Policy</p>
+                </div>
+
+    </main>
+                <footer>
+                    <p>&copy; 2023 Your Game Store. All rights reserved.</p>
+             </footer>
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                // Scroll smoothly to the section
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    
+        let slideIndex = 0;
+        const imageContainer = document.querySelector('.image-container');
+        const images = document.querySelectorAll('.featured-games img');
+    
+        function showSlides() {
+            slideIndex++;
+    
+            if (slideIndex >= images.length) {
+                slideIndex = 0;
+            }
+    
+            const translateValue = -100 * slideIndex + '%';
+            imageContainer.style.transform = 'translateX(' + translateValue + ')';
+    
+            setTimeout(showSlides, 5000); // Set the timeout to 5 seconds (5000 milliseconds)
+        }
+    
+        // Start the slideshow when the page loads
+        window.onload = showSlides;
+    </script>
+    
+</body>
+
+</html>
